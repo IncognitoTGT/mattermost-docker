@@ -5,8 +5,6 @@ version: "2.4"
 services:
 
   mattermost:
-    depends_on:
-      - postgres
     image: mattermost/${MATTERMOST_IMAGE}:${MATTERMOST_IMAGE_TAG}
     restart: ${RESTART_POLICY}
     security_opt:
